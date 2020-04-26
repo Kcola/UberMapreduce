@@ -88,7 +88,7 @@ public class MapReduce {
         Configuration conf = new Configuration();
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
         if (otherArgs.length < 2) {
-            System.err.println("Usage: wordcount <in> [<in>...] <out>");
+            System.err.println("Usage: MapReduce <in> <out>");
             System.exit(2);
         }
         Job job = new Job(conf, "average speed per town");
